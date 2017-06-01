@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#49796B;
+}
+
+header{
+    padding:30px;
+    background-color:#ffffff;
+    border-bottom: 1px solid #b00000;
+}
+
+#logo{
+    font-size: 2em;
+    font-weight: bolder;
+    color:#000000;
+    font-family: Tahoma;
+}
+
+#header-input{
+    padding: 7px 20px;
+}
+
+.btn-topics{
+        margin: 10px;
+        background-color:#eeeeee;
+        border-radius: 5px;
+        padding: 5px;
+        box-shadow: 0px 2px 5px;
+}
+
+
+#container{
+    background-color: #eeeeee;
+    min-height: 500px;
+    margin:5px 0px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.btn{
+    margin:1px;
+}
+
+
+.giphydv{
+    display: inline-block;
+}
+
+footer{
+    font-size:8px;
+    color:#555555;
+    text-align:center;
+    padding: 30px;
+}
