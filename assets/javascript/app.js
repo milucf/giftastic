@@ -29,12 +29,16 @@ function topicsInclude(str){
 }
 
  $(document).on("click", "img", function(){
+   var responseid="";
+   if(this.src.lastIndexOf("?response_id=")>=0){
+     responseid=this.src.substring(this.src.lastIndexOf("?response_id="));
+   }
    var newSrc=this.src;
-   if(this.src.endsWith("_s.gif")){
-    newSrc=newSrc.substr(0,newSrc.lastIndexOf("_s.gif"))+".gif";
+   if(this.src.includes("_s.gif")){
+    newSrc=newSrc.substr(0,newSrc.lastIndexOf("_s.gif"))+".gif"+responseid;
    }
    else{
-     newSrc=newSrc.substr(0,newSrc.lastIndexOf(".gif"))+"_s.gif";
+     newSrc=newSrc.substr(0,newSrc.lastIndexOf(".gif"))+"_s.gif"+responseid;
    }
 this.src=newSrc;
  });
